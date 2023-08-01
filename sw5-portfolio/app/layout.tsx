@@ -1,9 +1,10 @@
+'use client'
+
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import Navbar from './components/Navbar'
+import { usePathname } from 'next/navigation'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,11 +16,34 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const pathname = usePathname()
+  let bgStyle = {
+    backgroundColor: '#35938D'
+  };
+  if (pathname==='/article') {
+      bgStyle = {
+        backgroundImage:'linear-gradient(to right, white, white, #f5f2fb, #9c7ec5, #b2c59d)'
+      };
+    } else if(pathname==='/contact'){
+      
+      bgStyle = {
+        backgroundImage:'linear-gradient(to right, white, #ccb9ea, #ab8bde, #a17dd9, #c6b1e8)'
+      };
+    } else if(pathname!=='/') {
+      bgStyle = {
+        backgroundColor: '#ffffff'
+      }
+    }
+
   return (
-    <html lang="en">
-      <body className={'bg-[#35938D] flex-col min-h-screen'}>
-        <Navbar/>
+    <html lang="en" className=''>
+      <head>
+      </head>
+      <body className={'flex-col min-h-screen'} style={bgStyle}>
+        <Navbar params={pathname} />
+
         {children}
+        
         {/* <Footer/> */}
       </body>
     </html>
