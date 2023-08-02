@@ -1,5 +1,5 @@
 
-export default function Navbar({params}) {
+export default function Navbar({params}:{params:string}) {
     const menus = [{'title':'Home','slug':'/'},{'title':'Article','slug':'/article'},{'title':'Skills','slug':'/skills'},{'title':'Project','slug':'/project'},{'title':'Education','slug':'/education'},{'title':'Working Experience','slug':'/working-experience'},{'title':'Contact','slug':'/contact'}];
     const filteredMenus = menus.filter(menu => {
         return menu.slug !== params
