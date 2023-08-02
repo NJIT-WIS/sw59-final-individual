@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
 defaults:
   run:
-    working-directory: sw59-portfolio
+    working-directory: sw5-portfolio
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -87,7 +87,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./sw59-portfolio/out
+          path: ./sw5-portfolio/out
 
   #   Deployment job
   deploy:

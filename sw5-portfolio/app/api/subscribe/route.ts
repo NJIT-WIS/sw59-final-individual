@@ -18,7 +18,6 @@ export async function GET(request: Request) {
 
 export async function POST(req: Request, resp: NextApiResponse) {
     const { email } = await req.json();
-    console.log(email);
     if (!email) {
       return resp.status(400).json({ error: "Email is empty!" });
     }
