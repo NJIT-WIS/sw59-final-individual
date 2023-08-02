@@ -6,7 +6,7 @@ export default function Article() {
         <div className="flex flex-col w-full lg:flex-row">
             <div className="grid flex-grow card rounded-box place-items-center w-1/2">
                 <div className='text-[#5A1EBC] text-6xl mt-4 mb-3'>
-                    <p className=' font-bold'>Know More</p>
+                    <p id='article_test_key' className=' font-bold'>Know More</p>
                     <p className=' font-bold'>About <span className='text-[#E69D0F]'>me!</span></p>
                 </div>
 
