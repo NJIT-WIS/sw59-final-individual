@@ -1,15 +1,6 @@
 import Image from 'next/image'
 
 export default function Home() {
-  const circleStyle={
-    float: "left",
-    width: "300px",
-    height: "300px",
-    margin: "20px",
-    shape-outside: circle(),
-    clip-path: circle(),
-    background: lightblue
-}
 
   return (
     <main>
