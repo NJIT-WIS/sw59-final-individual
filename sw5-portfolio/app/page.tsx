@@ -20,7 +20,7 @@ export default function Home() {
               </div>
               <div className='flex gap-4'>
                 <input type="text" placeholder="Email Address" className="input w-80 max-w-xs" />
-                <button className="btn btn-primary bg-[#4C199F]">Submit</button>
+                <button type='button' className="btn btn-primary bg-[#4C199F]">SUBMIT</button>
               </div>
 
               <div className='flex gap-11 mt-8'>
