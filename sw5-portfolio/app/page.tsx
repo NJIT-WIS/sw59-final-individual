@@ -23,7 +23,7 @@ export default function Home() {
         <div className="hero-content flex-col lg:flex-row-reverse  bg-[#35938D]">
           <Image src="/hero.png" width={410} height={524} sizes="100vw" alt='sw5 porfolio' className={'mb-16'} />
           <div>
-            <p className="text-5xl font-bold text-[#5A1EBC]">Hi ! I'm Shunji </p>
+            <p className="text-5xl font-bold text-[#5A1EBC]">Hi ! I&apos;m Shunji </p>
             <p className=" mt-6 text-5xl font-bold text-[#5A1EBC]">BS/DS <span className='text-[#E79D0F]'>Specialist</span></p>
             <p className="py-6" style={{width: '100%',wordBreak: 'break-word',whiteSpace: 'pre-wrap'}} >Making the power of data-driven decision making accessible to all.</p>
             <div className=' mt-6'>
