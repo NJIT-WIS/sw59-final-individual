@@ -23,8 +23,8 @@ export default function Contact() {
                                 </li>
                                 <li>
                                     <div className='flex  gap-2 mt-8'>
-                                        <Image src={'/icon_send.svg'} alt='' width={40} height={40} />
-                                        <a href=''><span>Email</span></a>
+                                        <Image title='sw59@njit.edu' src={'/icon_send.svg'} alt='' width={40} height={40} />
+                                        <a href='mailto:sw59@njit.edu'><span>Email</span></a>
                                     </div>
                                 </li>
                                 <li>
@@ -43,9 +43,9 @@ export default function Contact() {
                             </ul>
                         </div>
                         <div className='ml-8 mt-12 '>
-                            <a
+                            <a title='sw59@njit.edu'
                                 className="inline-block rounded  bg-[#1F5DFC] px-12 py-3 text-md font-semibold text-[#D4D4B8]  hover:border-indigo-600 focus:outline-none focus:ring active:border-indigo-500"
-                                href="/"
+                                href="mailto:sw59@njit.edu"
                             >
                                 Hire me!
                             </a>

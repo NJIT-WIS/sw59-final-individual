@@ -1,6 +1,21 @@
+'use client'
 import Image from 'next/image'
+import { useState } from "react";
 
 export default function Home() {
+  const [success, setSuccess] = useState(false);
+  const [email, setEmail] = useState('');
+  const handleSubmit = async () => {
+    const response = await fetch('/api/subscribe', {
+      method: 'POST',
+      body: JSON.stringify({
+        email: email 
+      })
+    });
+    if(response.ok) {
+      setSuccess(true);
+    }
+  }
 
   return (
     <main>
@@ -18,9 +33,11 @@ export default function Home() {
                   Join News Letter
                 </span>
               </div>
-              <div className='flex gap-4'>
-                <input type="text" placeholder="Email Address" className="input w-80 max-w-xs" />
-                <button type='button' className="btn btn-primary bg-[#4C199F]">SUBMIT</button>
+              <div className='flex gap-4 items-center'>
+                <input type="text" placeholder="Email Address" className="input w-80 max-w-xs" value={email}
+      onChange={(e) => setEmail(e.target.value)}/>
+                <button id='submit_btn_id' type='button' className="btn btn-primary bg-[#4C199F]" onClick={handleSubmit}>SUBMIT</button>
+                {success && <p className='text-white'>Success!</p>}
               </div>
 
               <div className='flex gap-11 mt-8'>
