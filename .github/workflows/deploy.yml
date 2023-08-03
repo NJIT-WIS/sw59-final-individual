@@ -32,6 +32,10 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
+      - uses: kolpav/purge-artifacts-action@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          expire-in: 7days # Setting this to 0 will delete all artifacts
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
