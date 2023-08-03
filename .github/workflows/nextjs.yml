@@ -89,7 +89,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./sw5-portfolio/out
+          path: ./sw5-portfolio/out/out
 
   #   Deployment job
   deploy:
