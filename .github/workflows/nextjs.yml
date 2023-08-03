@@ -89,7 +89,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: /home/runner/work/sw59-final-individual/sw59-final-individual/sw5-portfolio/out/out
+          path: | 
+            ./sw5-portfolio/out
+            !./**/node_modules
 
   #   Deployment job
   deploy:
