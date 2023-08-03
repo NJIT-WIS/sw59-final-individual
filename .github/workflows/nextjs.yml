@@ -86,42 +86,42 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} npm run export
       - name: statistic out folder size
         run: ls -lhrt && du -skh /home/runner/work/sw59-final-individual/sw59-final-individual/sw5-portfolio/out && rm -rf ./node_modules && ls -lhrt
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: ./sw5-portfolio/out
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v2
+      #   with:
+      #     path: ./sw5-portfolio/out
 
   #   Deployment job
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+  # deploy:
+  #   environment:
+  #     name: github-pages
+  #     url: ${{ steps.deployment.outputs.page_url }}
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   steps:
+  #     - name: Deploy to GitHub Pages
+  #       id: deployment
+  #       uses: actions/deploy-pages@v2
 
-  #   Deployment test job
-  deployTest:
-    timeout-minutes: 60
-    runs-on: ubuntu-latest
-    needs: deploy
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: "18.16.0"
-      - name: Install dependencies
-        run: npm i
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
-      - name: Run Playwright tests
-        run: npm run deployTest
-      - uses: actions/upload-artifact@v2
-        if: always()
-        with:
-          name: playwright-report
-          path: playwright-report/
-          retention-days: 30
+  # #   Deployment test job
+  # deployTest:
+  #   timeout-minutes: 60
+  #   runs-on: ubuntu-latest
+  #   needs: deploy
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - uses: actions/setup-node@v2
+  #       with:
+  #         node-version: "18.16.0"
+  #     - name: Install dependencies
+  #       run: npm i
+  #     - name: Install Playwright Browsers
+  #       run: npx playwright install --with-deps
+  #     - name: Run Playwright tests
+  #       run: npm run deployTest
+  #     - uses: actions/upload-artifact@v2
+  #       if: always()
+  #       with:
+  #         name: playwright-report
+  #         path: playwright-report/
+  #         retention-days: 30
