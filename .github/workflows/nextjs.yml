@@ -85,13 +85,12 @@ jobs:
       - name: Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} npm run export
       - name: statistic out folder size
-        run: ls -lhrt && du -skh /home/runner/work/sw59-final-individual/sw59-final-individual/sw5-portfolio/out
-      - name: del node_modules
-        run: rm -rf ./node_modules
+        run: ls -lhrt && du -skh /home/runner/work/sw59-final-individual/sw59-final-individual/sw5-portfolio/out && rm -rf ./node_modules && ls -lhrt
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: ./out
+          path: ./sw5-portfolio/out
+
   #   Deployment job
   deploy:
     environment:
