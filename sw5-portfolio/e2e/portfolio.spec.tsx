@@ -17,8 +17,10 @@ test.describe('test suite', () => {
   
   // test home page button 
   test("home submit button", async ({ page }) => {
-    const submit = await page.locator("button");
-    await expect(submit).toHaveText("SUBMIT");
+    const submit = await page.$("#submit_btn_id");
+    
+    const textContent = await submit?.textContent(); 
+    await expect(textContent ).toBe("SUBMIT");
   });
 
       // test article page  status

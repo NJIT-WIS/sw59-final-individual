@@ -3,6 +3,8 @@
 import './globals.css'
 import Navbar from './components/Navbar'
 import { usePathname } from 'next/navigation'
+import GoogleAnalytics from './components/GoogleAnalytics'
+import CookieShower from './components/CookieShower'
 
 
 export default function RootLayout({
@@ -42,6 +44,8 @@ export default function RootLayout({
         {children}
         
         {/* <Footer/> */}
+        <GoogleAnalytics />
+        <CookieShower/>
       </body>
     </html>
   )
