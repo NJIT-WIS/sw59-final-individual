@@ -20,7 +20,7 @@ test.describe('test suite', () => {
     const submit = await page.$("#submit_btn_id");
     
     const textContent = await submit?.textContent(); 
-    await expect(textContent ).toBe("SUBMIT");
+    await expect(textContent ).toBe("Submit");
   });
 
       // test article page  status
