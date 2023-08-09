@@ -1,6 +1,7 @@
 # Portfolio deploy website: [https://sw59-final-individual.vercel.app/](https://sw59-final-individual.vercel.app/)  
 # Figma interactive designing: [https://www.figma.com/file/hfi0an5JaI6OoqXalFgfyh/Shunji-Wei's-Portfolio?type=design&node-id=0%3A1&mode=design&t=MyFvLZcVrJQS4qYQ-1](https://www.figma.com/file/hfi0an5JaI6OoqXalFgfyh/Shunji-Wei's-Portfolio?type=design&node-id=0%3A1&mode=design&t=MyFvLZcVrJQS4qYQ-1)  
 # Presentation Video: [https://drive.google.com/file/d/1-xdgMl80lbcw-N-Gy9gv5VL2ulE-XNmi/view?usp=sharing](https://drive.google.com/file/d/1-xdgMl80lbcw-N-Gy9gv5VL2ulE-XNmi/view?usp=sharing)  
+# Presentation PPT: [https://docs.google.com/presentation/d/106RnCYZIu7rmB6YCMy_QNKnfNzJNUlSND7aY1hiYZ1A/edit?usp=sharing](https://docs.google.com/presentation/d/106RnCYZIu7rmB6YCMy_QNKnfNzJNUlSND7aY1hiYZ1A/edit?usp=sharing)  
 
 `
 
