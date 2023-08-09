@@ -240,7 +240,7 @@ export default function Home() {
                       ></path>{" "}
                     </g>
                   </svg>
-                  <a href="https://youtube.com">
+                  <a href="https://drive.google.com/file/d/1-xdgMl80lbcw-N-Gy9gv5VL2ulE-XNmi/view?usp=sharing">
                     <span>Video</span>
                   </a>
                 </div>
