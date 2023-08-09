@@ -19,10 +19,15 @@ export default function Home() {
     if (response.ok) {
       setSuccess(true);
     }
-    const subscribeDialog = document.getElementById("my_modal_11");
-    subscribeDialog?.closest('.my_modal_11');
+    const subscribeDialog = document.getElementById("my_modal_11") as any;
+    subscribeDialog?.close();
 
     setChecked(true);
+  };
+
+  const openModal = ()=>{
+    const subscribeDialog = document.getElementById("my_modal_11") as any;
+    subscribeDialog?.showModal();
   };
 
 
@@ -93,7 +98,7 @@ export default function Home() {
 
                 <button
                   className="btn btn-primary bg-[#4C199F]"
-                  onClick={() => window.my_modal_11.showModal()}
+                  onClick={openModal}
                 >
                   Subscribe
                 </button>
