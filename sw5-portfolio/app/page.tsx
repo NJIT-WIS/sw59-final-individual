@@ -20,7 +20,7 @@ export default function Home() {
       setSuccess(true);
     }
     const subscribeDialog = document.getElementById("my_modal_11");
-    subscribeDialog?.close();
+    subscribeDialog?.closest('.my_modal_11');
 
     setChecked(true);
   };
