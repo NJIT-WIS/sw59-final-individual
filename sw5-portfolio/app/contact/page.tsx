@@ -15,29 +15,29 @@ export default function Contact() {
                     <div className='flex flex-row justify-left'>
                         <div className='flex gap-4'>
                             <ul className='gap-4 items-start font-semibold text-xl text-[#25232B]'>
-                                <li className='gap-4'>
+                                {/* <li className='gap-4'>
                                     <div className='flex gap-2 mt-8'>
                                         <Image src={'/icon_call.svg'} alt='' width={40} height={40} />
                                         <a href=''><span>Call</span></a>
                                     </div>
-                                </li>
-                                <li>
+                                </li> */}
+                                {/* <li>
                                     <div className='flex  gap-2 mt-8'>
                                         <Image title='sw59@njit.edu' src={'/icon_send.svg'} alt='' width={40} height={40} />
                                         <a href='mailto:sw59@njit.edu'><span>Email</span></a>
                                     </div>
-                                </li>
-                                <li>
-                                    <div className='flex  gap-2 mt-8'>
+                                </li> */}
+                               <li>
+                                     <div className='flex gap-2 mt-8'>
+                                    <Image src={'/icon_facebook.svg'} alt='Facebook Icon' width={40} height={40} />
+                                    <a href='https://www.facebook.com/siw899'><span>Facebook</span></a>
+                                     </div>
+                             </li>
 
-                                        <Image src={'/icon_facebook.svg'} alt='' width={40} height={40} />
-                                        <a href=''><span>Facebook</span></a>
-                                    </div>
-                                </li>
                                 <li>
                                     <div className='flex  gap-2 mt-8'>
                                         <Image src={'/icon_twitter.svg'} alt='' width={40} height={40} />
-                                        <a href=''><span>Twitter</span></a>
+                                        <a href='https://twitter.com/wsjlarry/highlights'><span>Twitter</span></a>
                                     </div>
                                 </li>
                             </ul>

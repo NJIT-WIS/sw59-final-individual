@@ -186,7 +186,7 @@ export default function Home() {
                       ></path>{" "}
                     </g>
                   </svg>
-                  <a href="">
+                  <a href="http://linkedin.com/in/shunji-wei-11b41726b">
                     <span>LinkedIn</span>
                   </a>
                 </div>

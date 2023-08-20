@@ -15,7 +15,7 @@ export default function Article() {
                         <span className='text-[#5A1EBC] font-bold'>SUMMARY</span>
                         <p className=' text-left mt-3 text-[#1F5DFC]'>2+ years of work experience in database management, statistical analysis, prediction analysis, and risk control</p>
                         <p className=' text-left mt-5 text-[#1F5DFC]'>1+ years of marketing analysis experience in cluster analysis, price elasticity testing, and demand prediction.</p>
-                        <p className=' text-left mt-5 text-[#1F5DFC]'> Railway data analysis experience in passenger & cargo transportation </p>
+        
                     </div>
                 </div>
             </div>

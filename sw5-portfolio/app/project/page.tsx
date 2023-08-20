@@ -25,8 +25,7 @@ export default function Project() {
                 </div>
                 <div className='card rounded-box mt-3 bg-[#7B5050D1] text-[#FFFFFF] text-2xl font-semibold max-w-lg pt-10 pb-10 pl-5 pr-5'>
                     <p>
-                    Beijing Estate Market & Price Prospective: 
-Conduct data modeling using data mining skill and python tool for analyzing Beijing’s real estate market and predicting price trends in the next 5 years which provided real estate investor with effective decision-making
+                    Utilized C++ and Excel-VBA to compute initial margin requirements for futures and options combinations involving stocks, stock indices, government bonds, commodities, and foreign exchange, with proficiency in margin offset for futures options, butterfly spreads, condor spreads, and other trading strategies.
                     </p>
                 </div>
             </div>
