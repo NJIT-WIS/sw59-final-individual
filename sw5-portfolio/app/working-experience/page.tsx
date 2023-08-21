@@ -12,13 +12,13 @@ export default function WorkingExperience() {
                 <div className="grid card rounded-box w-full mx-auto my-auto text-center bg-[#354A63] text-white">
                     <div className='p-10'>
                         <p className=' font-semibold text-6xl'>CenterPoint Energy</p>
-                        <p className=' text-2xl font-semibold mt-8'>Data Analyst  04/2022 - 04/2023</p>
+                        <p className=' text-2xl font-semibold mt-8'>Data Analyst  04/2023 - 08/2023</p>
                     </div>
                 </div>
                 <div className="grid card rounded-box w-full mx-auto mt-8 text-center bg-[#787878] text-white">
                     <div className=' p-10'>
                         <p className=' font-semibold text-6xl'>LTS NJ Inc</p>
-                        <p className=' text-2xl font-semibold mt-8'>Marketing Analyst  06/2016 - 08/2019</p>
+                        <p className=' text-2xl font-semibold mt-8'>Marketing Analyst  10/2018 - 08/2019</p>
                     </div>
                 </div>
             </div>
